@@ -20,3 +20,16 @@ steps:
     PathtoPublish: 'Athena-DDLAutomationDemo/Athena-DDLAutomation/bin/Debug/Athena-DDLAutomation.dacpac'
     ArtifactName: Dacpac
     ArtifactType: Container
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'Athena-DDLAutomationDemo/Pre-DACPAC/*'
+    ArtifactName: Dacpac
+    ArtifactType: Container
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'Athena-DDLAutomationDemo/Supporting SQL Scripts/*'
+    ArtifactName: Dacpac
+    ArtifactType: Container
+
