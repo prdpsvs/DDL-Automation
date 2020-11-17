@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-2019'
+
+steps:
+- task: MSBuild@1
+  displayName: "Build Database Project"
+  inputs:
+    solution: 'Athena-DDLAutomationDemo/Athena-DDLAutomation/Athena-DDLAutomation.sqlproj'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'Athena-DDLAutomationDemo/Athena-DDLAutomation/bin/Debug/Athena-DDLAutomation.dacpac'
+    ArtifactName: Dacpac
+    ArtifactType: Container
