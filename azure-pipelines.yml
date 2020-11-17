@@ -23,13 +23,13 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'Athena-DDLAutomationDemo/Pre-DACPAC/*'
+    PathtoPublish: 'Athena-DDLAutomationDemo/Pre-DACPAC/'
     ArtifactName: Dacpac
     ArtifactType: Container
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'Athena-DDLAutomationDemo/Supporting SQL Scripts/*'
+    PathtoPublish: 'Athena-DDLAutomationDemo/Supporting SQL Scripts/'
     ArtifactName: Dacpac
     ArtifactType: Container
 
