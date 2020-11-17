@@ -21,15 +21,9 @@ steps:
     ArtifactName: Dacpac
     ArtifactType: Container
 
-- task: PublishBuildArtifacts@1
+- task: CopyFiles@1
   inputs:
-    PathtoPublish: 'Athena-DDLAutomationDemo/Pre-DACPAC/'
-    ArtifactName: Dacpac
-    ArtifactType: Container
+    SourceFolder: 'Athena-DDLAutomationDemo/Pre-DACPAC/*'
+    TargetFolder: '$(build.artifactstagingdirectory)'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: 'Athena-DDLAutomationDemo/Supporting SQL Scripts/'
-    ArtifactName: Dacpac
-    ArtifactType: Container
 
