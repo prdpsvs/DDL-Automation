@@ -63,6 +63,7 @@
     <Folder Include="Security\Schemas" />
     <Folder Include="Pre-DACPAC Scripts" />
     <Folder Include="Supporting SQL Scripts" />
+    <Folder Include="ATHENA_DW\Post Deployment Script" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Schemas\ATHENA_DW.sql" />
@@ -87,8 +88,6 @@
     <Build Include="ATHENA_DW\Views\COUPON_DIM_VW.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Pre-DACPAC Scripts\Deploy non-nullable columns.sql">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <PostDeploy Include="ATHENA_DW\Post Deployment Script\Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
