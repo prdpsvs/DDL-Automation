@@ -15,20 +15,9 @@ steps:
   inputs:
     solution: 'Athena-DDLAutomationDemo/Athena-DDLAutomation/Athena-DDLAutomation.sqlproj'
 
-
-- task: CopyFiles@1
-  inputs:
-    SourceFolder: 'Athena-DDLAutomationDemo/Athena-DDLAutomation/bin/Debug/Pre-DACPAC Scripts/*'
-    TargetFolder: '$(build.artifactstagingdirectory)/Pre-DACPAC Scripts/'
-
-- task: CopyFiles@1
-  inputs:
-    SourceFolder: 'Athena-DDLAutomationDemo/Athena-DDLAutomation/bin/Debug/Supporting SQL Scripts/*'
-    TargetFolder: '$(build.artifactstagingdirectory)/Supporting SQL Scripts/'
-
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'Athena-DDLAutomationDemo/Athena-DDLAutomation/bin/Debug/Athena-DDLAutomation.dacpac'
+    PathtoPublish: 'Athena-DDLAutomationDemo/Athena-DDLAutomation/bin/Debug/*'
     ArtifactName: Dacpac
     ArtifactType: Container
 
