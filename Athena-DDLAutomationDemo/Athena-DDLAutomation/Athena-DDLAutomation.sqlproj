@@ -82,5 +82,8 @@
     <Build Include="ATHENA_DW\Tables\CARRIER_DIM.sql" />
     <Build Include="ATHENA_DW\Tables\CHANNEL_DIM.sql" />
     <Build Include="ATHENA_DW\Tables\COUPON_DIM.sql" />
+    <Build Include="ATHENA_DW\Views\CARRIER_DIM_VW.sql" />
+    <Build Include="ATHENA_DW\Views\CHANNEL_DIM_VW.sql" />
+    <Build Include="ATHENA_DW\Views\COUPON_DIM_VW.sql" />
   </ItemGroup>
 </Project>
