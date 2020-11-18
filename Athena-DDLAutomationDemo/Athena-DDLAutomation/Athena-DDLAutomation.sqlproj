@@ -87,6 +87,8 @@
     <Build Include="ATHENA_DW\Views\COUPON_DIM_VW.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Pre-DACPAC Scripts\Deploy non-nullable columns.sql" />
+    <None Include="Pre-DACPAC Scripts\Deploy non-nullable columns.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
