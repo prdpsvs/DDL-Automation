@@ -61,6 +61,8 @@
     <Folder Include="ATHENA_DW\Views" />
     <Folder Include="Security" />
     <Folder Include="Security\Schemas" />
+    <Folder Include="Pre-DACPAC Scripts" />
+    <Folder Include="Supporting SQL Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="ATHENA_DW\Views\COUPON_DIM_VW.sql" />
@@ -71,5 +73,21 @@
     <Build Include="ATHENA_DW\Tables\CHANNEL_DIM.sql" />
     <Build Include="ATHENA_DW\Tables\COUPON_DIM.sql" />
     <Build Include="ATHENA_DW\Tables\BI_ITEM_GROUP.sql" />
+    <None Include="Pre-DACPAC Scripts\Add Non-nullable columns.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Supporting SQL Scripts\INSERT_CHANNEL_DIM.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Supporting SQL Scripts\INSERT_COUPON_DIM.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Supporting SQL Scripts\INSERT BI_ITEM_GROUP.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Supporting SQL Scripts\INSERT CARRIER_DIM.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Build Include="Supporting SQL Scripts\Steps to execute in Demo.sql" />
   </ItemGroup>
 </Project>
