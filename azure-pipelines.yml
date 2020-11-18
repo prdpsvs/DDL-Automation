@@ -20,3 +20,10 @@ steps:
     PathtoPublish: 'Athena-DDLAutomationDemo/Athena-DDLAutomation/bin/Debug/Athena-DDLAutomation.dacpac'
     ArtifactName: Dacpac
     ArtifactType: Container
+
+- task: CopyFiles@1
+  inputs:
+    SourceFolder: 'Athena-DDLAutomationDemo/Pre-DACPAC/*'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+
+
