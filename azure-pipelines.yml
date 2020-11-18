@@ -15,15 +15,18 @@ steps:
   inputs:
     solution: 'Athena-DDLAutomationDemo/Athena-DDLAutomation/Athena-DDLAutomation.sqlproj'
 
+- task: CopyFiles@2
+  inputs:
+    Contents: |
+      Athena-DDLAutomationDemo\Athena-DDLAutomation\bin\Debug\Pre-DACPAC Scripts\*.sql
+      Athena-DDLAutomationDemo\Athena-DDLAutomation\bin\Debug\Supporting SQL Scripts\*.sql
+      Athena-DDLAutomationDemo\Athena-DDLAutomation\bin\Debug\Athena-DDLAutomation.dacpac
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/Scripts'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'Athena-DDLAutomationDemo/Athena-DDLAutomation/bin/Debug/Athena-DDLAutomation.dacpac'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/Scripts'
     ArtifactName: Dacpac
     ArtifactType: Container
 
-- task: CopyFiles@1
-  inputs:
-    SourceFolder: 'Athena-DDLAutomationDemo/Pre-DACPAC/*'
-    TargetFolder: '$(build.artifactstagingdirectory)'
 
 
