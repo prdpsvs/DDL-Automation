@@ -3,6 +3,7 @@
 	[CHANNEL_ID] [bigint] NOT NULL,
 	[CHANNEL_CODE] [varchar](10) NOT NULL,
 	[CHANNEL_DESC] [varchar](60) NOT NULL,
+	[CHANNEL_XYZ] [int] NOT NULL,
 	[CREATE_AUDIT_ID] [bigint] NOT NULL,
 	[CREATE_DB_TIMESTAMP] [datetime2](6) NOT NULL,
 	[UPDATE_AUDIT_ID] [bigint] NOT NULL,
