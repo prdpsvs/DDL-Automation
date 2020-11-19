@@ -17,4 +17,4 @@ WITH
 		[CHANNEL_CODE] ASC
 	)
 )
-GO
+GO 
