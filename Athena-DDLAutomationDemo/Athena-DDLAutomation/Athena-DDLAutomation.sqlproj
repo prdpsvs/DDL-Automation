@@ -66,24 +66,5 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Schemas\ATHENA_DW.sql" />
-    <None Include="Supporting SQL Scripts\INSERT_CHANNEL_DIM.sql">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Supporting SQL Scripts\INSERT_COUPON_DIM.sql">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Supporting SQL Scripts\INSERT BI_ITEM_GROUP.sql">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Supporting SQL Scripts\INSERT CARRIER_DIM.sql">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <Build Include="Supporting SQL Scripts\Steps to execute in Demo.sql" />
-    <Build Include="ATHENA_DW\Tables\CARRIER_DIM.sql" />
-    <Build Include="ATHENA_DW\Tables\CHANNEL_DIM.sql" />
-    <Build Include="ATHENA_DW\Tables\COUPON_DIM.sql" />
-    <Build Include="ATHENA_DW\Views\CARRIER_DIM_VW.sql" />
-    <Build Include="ATHENA_DW\Views\CHANNEL_DIM_VW.sql" />
-    <Build Include="ATHENA_DW\Views\COUPON_DIM_VW.sql" />
   </ItemGroup>
 </Project>
