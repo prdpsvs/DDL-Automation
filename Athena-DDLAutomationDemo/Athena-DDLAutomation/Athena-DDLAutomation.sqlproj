@@ -58,8 +58,15 @@
     <Folder Include="Properties" />
     <Folder Include="ATHENA_DW" />
     <Folder Include="Supporting SQL Scripts" />
+    <Folder Include="ATHENA_DW\Tables" />
+    <Folder Include="Security" />
+    <Folder Include="Security\Schema" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Supporting SQL Scripts\Steps to execute in Demo.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="ATHENA_DW\Tables\COUPON_DIM.sql" />
+    <Build Include="Security\Schema\ATHENA_DW.sql" />
   </ItemGroup>
 </Project>
