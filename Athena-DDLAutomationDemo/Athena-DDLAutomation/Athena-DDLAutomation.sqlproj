@@ -58,6 +58,11 @@
     <Folder Include="Properties" />
     <Folder Include="Supporting SQL Scripts" />
     <Folder Include="Pre-DACPAC Scripts" />
+    <Folder Include="Security" />
+    <Folder Include="Security\Schemas" />
+    <Folder Include="ATHENA_DW" />
+    <Folder Include="ATHENA_DW\Tables" />
+    <Folder Include="ATHENA_DW\Views" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Supporting SQL Scripts\Steps to execute in Demo.sql">
@@ -66,5 +71,14 @@
     <None Include="Pre-DACPAC Scripts\Dummy Script.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Security\Schemas\ATHENA_DW.sql" />
+    <Build Include="ATHENA_DW\Tables\COUPON_DIM.sql" />
+    <Build Include="ATHENA_DW\Tables\CHANNEL_DIM.sql" />
+    <Build Include="ATHENA_DW\Tables\CARRIER_DIM.sql" />
+    <Build Include="ATHENA_DW\Views\CARRIER_DIM_VW.sql" />
+    <Build Include="ATHENA_DW\Views\CHANNEL_DIM_VW.sql" />
+    <Build Include="ATHENA_DW\Views\COUPON_DIM_VW.sql" />
   </ItemGroup>
 </Project>
