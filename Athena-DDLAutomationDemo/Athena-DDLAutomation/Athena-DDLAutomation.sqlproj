@@ -56,5 +56,22 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="ATHENA_DW" />
+    <Folder Include="Supporting SQL Scripts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Supporting SQL Scripts\INSERT_CHANNEL_DIM.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Supporting SQL Scripts\INSERT_COUPON_DIM.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Supporting SQL Scripts\INSERT BI_ITEM_GROUP.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Supporting SQL Scripts\INSERT CARRIER_DIM.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Supporting SQL Scripts\Steps to execute in Demo.sql" />
   </ItemGroup>
 </Project>
