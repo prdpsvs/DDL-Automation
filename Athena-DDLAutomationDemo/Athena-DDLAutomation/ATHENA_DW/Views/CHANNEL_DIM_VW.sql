@@ -2,6 +2,7 @@
 AS SELECT CHANNEL_ID                      
      , CHANNEL_CODE                    
      , CHANNEL_DESC 
+     , CHANNEL_XYZ
      , CREATE_AUDIT_ID                 
      , CREATE_DB_TIMESTAMP             
      , UPDATE_AUDIT_ID                 

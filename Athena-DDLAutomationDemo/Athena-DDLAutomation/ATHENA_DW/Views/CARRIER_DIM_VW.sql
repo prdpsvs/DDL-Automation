@@ -1,7 +1,8 @@
 ﻿CREATE VIEW [ATHENA_DW].[CARRIER_DIM_VW]
 AS SELECT CARRIER_ID                      
      , CARRIER_CODE                    
-     , CARRIER_DESC                    
+     , CARRIER_DESC 
+     , CARRIER_XYZ
      , INFERRED_IND                    
      , INFERRED_RESOLVED_DATE          
      , CREATE_AUDIT_ID                 

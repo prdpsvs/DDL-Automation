@@ -71,6 +71,7 @@
     <None Include="Pre-DACPAC Scripts\Dummy Script.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Pre-DACPAC Scripts\Add Nullable column to Channeld_Dim.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Schemas\ATHENA_DW.sql" />
