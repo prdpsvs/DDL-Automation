@@ -61,12 +61,20 @@
     <Folder Include="ATHENA_DW\Tables" />
     <Folder Include="Security" />
     <Folder Include="Security\Schema" />
+    <Folder Include="Pre-DACPAC Scripts" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Supporting SQL Scripts\Steps to execute in Demo.sql" />
+    <None Include="Supporting SQL Scripts\Steps to execute in Demo.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Build Include="ATHENA_DW\Tables\COUPON_DIM.sql" />
     <Build Include="Security\Schema\ATHENA_DW.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pre-DACPAC Scripts\ClassFile1.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
