@@ -63,7 +63,9 @@
     <Folder Include="Security\Schema" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Supporting SQL Scripts\Steps to execute in Demo.sql" />
+    <None Include="Supporting SQL Scripts\Steps to execute in Demo.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Build Include="ATHENA_DW\Tables\COUPON_DIM.sql" />
