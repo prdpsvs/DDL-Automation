@@ -79,7 +79,7 @@
     <None Include="Supporting SQL Scripts\INSERT CARRIER_DIM.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <Build Include="Supporting SQL Scripts\Steps to execute in Demo.sql" />
+    <None Include="Supporting SQL Scripts\Steps to execute in Demo.sql" />
     <Build Include="ATHENA_DW\Tables\CARRIER_DIM.sql" />
     <Build Include="ATHENA_DW\Tables\CHANNEL_DIM.sql" />
     <Build Include="ATHENA_DW\Tables\COUPON_DIM.sql" />
