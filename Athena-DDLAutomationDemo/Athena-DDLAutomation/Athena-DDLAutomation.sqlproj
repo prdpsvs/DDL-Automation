@@ -56,15 +56,5 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="ATHENA_DW" />
-    <Folder Include="ATHENA_DW\Tables" />
-    <Folder Include="ATHENA_DW\Views" />
-    <Folder Include="Security" />
-    <Folder Include="Security\Schemas" />
-    <Folder Include="Pre-DACPAC Scripts" />
-    <Folder Include="Supporting SQL Scripts" />
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="Security\Schemas\ATHENA_DW.sql" />
   </ItemGroup>
 </Project>
