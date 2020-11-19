@@ -20,13 +20,12 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: |
-      Athena-DDLAutomationDemo\Athena-DDLAutomation\bin\Debug\**
+      Athena-DDLAutomationDemo\Athena-DDLAutomation\bin\Debug\Pre-DACPAC Scripts\*.sql
+      Athena-DDLAutomationDemo\Athena-DDLAutomation\bin\Debug\Supporting SQL Scripts\*.sql
+      Athena-DDLAutomationDemo\Athena-DDLAutomation\bin\Debug\Athena-DDLAutomation.dacpac
     TargetFolder: '$(Build.ArtifactStagingDirectory)/Scripts'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)/Scripts'
     ArtifactName: Dacpac
     ArtifactType: Container
-
-
-
