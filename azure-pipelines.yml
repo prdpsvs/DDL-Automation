@@ -20,9 +20,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: |
-      Athena-DDLAutomationDemo\Athena-DDLAutomation\bin\Debug\Pre-DACPAC Scripts\*.sql
-      Athena-DDLAutomationDemo\Athena-DDLAutomation\bin\Debug\Supporting SQL Scripts\*.sql
-      Athena-DDLAutomationDemo\Athena-DDLAutomation\bin\Debug\Athena-DDLAutomation.dacpac
+      Athena-DDLAutomationDemo\Athena-DDLAutomation\bin\Debug\**
     TargetFolder: '$(Build.ArtifactStagingDirectory)/Scripts'
 - task: PublishBuildArtifacts@1
   inputs:
